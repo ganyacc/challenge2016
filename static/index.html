@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Distribution Permission Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Distribution Permission Checker</h1>
+
+      <div class="form-container">
+        <div class="form-group">
+          <label for="distributor">Distributor:</label>
+          <select id="distributor">
+            <option value="DISTRIBUTOR1">DISTRIBUTOR1</option>
+            <option value="DISTRIBUTOR2">DISTRIBUTOR2</option>
+            <option value="DISTRIBUTOR3">DISTRIBUTOR3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Region Code:</label>
+          <input type="text" id="region" placeholder="e.g., CHI-IL-USA" />
+        </div>
+
+        <button onclick="checkPermission()">Check Permission</button>
+      </div>
+
+      <div id="result" class="result hidden">
+        <h2>Result:</h2>
+        <p id="resultText"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
